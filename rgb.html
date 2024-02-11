@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB</title>
+</head>
+
+<body>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-11 col-lg-9 mx-auto">
+                <div class="card">
+                    <div class="card-header text-center">
+                        RGB Color Model
+                    </div>
+                    <div class="card-body">
+                        <p><span style="color: red;">R</span><span style="color: green;">G</span><span style="color: blue;">B</span> is an additive color projected light color model where each color is stored in one <code>byte</code>.
+                        </p>
+                        <p>All possible combinations of <span style="color: red;">Red</span>, <span style="color: green;">Green</span> and <span style="color: blue;">Blue</span> result in <span id="math">2<sup>8</sup>X2<sup>8</sup>X2<sup>8</sup>=16,777,216</span> different colors.</p>
+                        <p class="card-text"><small class="text-muted">— <span style="color: red;">Red</span> <span style="color: green;">Green</span> <span style="color: blue;">Blue</span>(<span style="color: red;">R</span><span style="color: green;">G</span><span style="color: blue;">B</span>) - Color Model</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row mb-3">
+            <div class="col d-flex flex-column justify-content-between align-items-center" style="height: 100px;">
+                <label for="red" class="h4" style="color: red;">Select Red:</label>
+                <select name="red" style="font-size: 1.25rem; height: 2rem;">
+
+                </select>
+            </div>
+            <div class="col d-flex flex-column justify-content-between align-items-center" style="height: 100px;">
+                <label for="green" class="h4" style="color: green;">Select Green:</label>
+                <select name="green" style="font-size: 1.25rem; height: 2rem;">
+
+                </select>
+            </div>
+            <div class="col d-flex flex-column justify-content-between align-items-center" style="height: 100px;">
+                <label for="blue" class="h4" style="color: blue;">Select Blue:</label>
+                <select name="blue" style="font-size: 1.25rem; height: 2rem;">
+
+                </select>
+            </div>
+        </div>
+        <hr>
+        <div class="row mb-3">
+            <table class="table table-light text-center" id="output">
+                <thead class="text-black">
+                    <tr>
+                        <th>Decimal</th>
+                        <th>Hexadecimal</th>
+                        <th>Display</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+    <hr>
+
+    <!--Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/shared.js"></script>
+    <script src="js/rgb.js"></script>
+    
+    
+
+</body>
+
+</html>
